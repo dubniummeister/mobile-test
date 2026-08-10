@@ -35,144 +35,147 @@ offset_bottom = 640.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="ColorRect" type="ColorRect" parent="." unique_id=1866674335]
-layout_mode = 1
-anchors_preset = 8
+[node name="ScrollContainer" type="ScrollContainer" parent="." unique_id=1715422102]
+layout_mode = 0
+offset_right = 720.0
+offset_bottom = 1280.0
+
+[node name="Container" type="Control" parent="ScrollContainer" unique_id=362922219]
+custom_minimum_size = Vector2(720, 1856)
+layout_mode = 2
+
+[node name="ColorRect" type="ColorRect" parent="ScrollContainer/Container" unique_id=1866674335]
+layout_mode = 0
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 offset_left = -360.0
-offset_top = -640.0
+offset_top = -928.0
 offset_right = 360.0
-offset_bottom = 1216.0
+offset_bottom = 928.0
 grow_horizontal = 2
 grow_vertical = 2
 color = Color(0.3180198, 0.31801978, 0.31801975, 1)
 
-[node name="ColorRect2" type="ColorRect" parent="." unique_id=771611581]
-layout_mode = 1
-anchors_preset = 8
+[node name="ColorRect2" type="ColorRect" parent="ScrollContainer/Container" unique_id=771611581]
+layout_mode = 0
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 offset_left = -344.0
-offset_top = -624.0
+offset_top = -912.0
 offset_right = 344.0
-offset_bottom = -512.0
+offset_bottom = -800.0
 grow_horizontal = 2
 grow_vertical = 2
 color = Color(0.39215687, 0.5686275, 0.32156864, 1)
 
-[node name="Label" type="Label" parent="." unique_id=1022747847]
-layout_mode = 1
-anchors_preset = 8
+[node name="Label" type="Label" parent="ScrollContainer/Container" unique_id=1022747847]
+layout_mode = 0
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -48.0
-offset_top = -584.0
-offset_right = 47.0
-offset_bottom = -561.0
+offset_left = -89.0
+offset_top = -881.5
+offset_right = 88.0
+offset_bottom = -839.5
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_font_sizes/font_size = 30
 text = "Title Header"
 
-[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=581002012]
+[node name="HBoxContainer" type="HBoxContainer" parent="ScrollContainer/Container" unique_id=581002012]
 custom_minimum_size = Vector2(460, 215)
-layout_mode = 1
-anchors_preset = 8
+layout_mode = 0
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = 113.5
-offset_top = -496.0
-offset_right = 573.5
-offset_bottom = 669.0
+offset_left = -344.0
+offset_top = -784.0
+offset_right = 1031.0
+offset_bottom = 381.0
 grow_horizontal = 2
 grow_vertical = 2
 scale = Vector2(0.5, 0.5)
 theme_override_constants/separation = 455
 
-[node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer" unique_id=2079532599]
+[node name="VBoxContainer" type="VBoxContainer" parent="ScrollContainer/Container/HBoxContainer" unique_id=2079532599]
 layout_mode = 2
 theme_override_constants/separation = 30
 
-[node name="TextureRect" type="TextureRect" parent="HBoxContainer/VBoxContainer" unique_id=2092256156]
+[node name="TextureRect" type="TextureRect" parent="ScrollContainer/Container/HBoxContainer/VBoxContainer" unique_id=2092256156]
 custom_maximum_size = Vector2(460, 215)
 layout_mode = 2
 texture = ExtResource("1_kuuv8")
 
-[node name="TextureRect2" type="TextureRect" parent="HBoxContainer/VBoxContainer" unique_id=427760993]
+[node name="TextureRect2" type="TextureRect" parent="ScrollContainer/Container/HBoxContainer/VBoxContainer" unique_id=427760993]
 custom_maximum_size = Vector2(460, 215)
 layout_mode = 2
 texture = ExtResource("2_ou021")
 
-[node name="TextureRect3" type="TextureRect" parent="HBoxContainer/VBoxContainer" unique_id=203449830]
+[node name="TextureRect3" type="TextureRect" parent="ScrollContainer/Container/HBoxContainer/VBoxContainer" unique_id=203449830]
 custom_maximum_size = Vector2(460, 215)
 layout_mode = 2
 texture = ExtResource("3_3fl80")
 
-[node name="TextureRect4" type="TextureRect" parent="HBoxContainer/VBoxContainer" unique_id=1828163915]
+[node name="TextureRect4" type="TextureRect" parent="ScrollContainer/Container/HBoxContainer/VBoxContainer" unique_id=1828163915]
 custom_maximum_size = Vector2(460, 215)
 layout_mode = 2
 texture = ExtResource("4_8jbwv")
 
-[node name="VBoxContainer2" type="VBoxContainer" parent="HBoxContainer" unique_id=161665114]
+[node name="VBoxContainer2" type="VBoxContainer" parent="ScrollContainer/Container/HBoxContainer" unique_id=161665114]
 layout_mode = 2
-theme_override_constants/separation = -185
+theme_override_constants/separation = 30
 
-[node name="TextureRect" type="TextureRect" parent="HBoxContainer/VBoxContainer2" unique_id=1021102017]
+[node name="TextureRect" type="TextureRect" parent="ScrollContainer/Container/HBoxContainer/VBoxContainer2" unique_id=1021102017]
 custom_maximum_size = Vector2(460, 215)
 layout_mode = 2
 texture = ExtResource("5_v61lp")
 
-[node name="TextureRect2" type="TextureRect" parent="HBoxContainer/VBoxContainer2" unique_id=1802457256]
+[node name="TextureRect2" type="TextureRect" parent="ScrollContainer/Container/HBoxContainer/VBoxContainer2" unique_id=1802457256]
 custom_maximum_size = Vector2(460, 215)
 layout_mode = 2
 texture = ExtResource("6_dgp6r")
 
-[node name="TextureRect3" type="TextureRect" parent="HBoxContainer/VBoxContainer2" unique_id=1392913446]
+[node name="TextureRect3" type="TextureRect" parent="ScrollContainer/Container/HBoxContainer/VBoxContainer2" unique_id=1392913446]
 custom_maximum_size = Vector2(460, 215)
 layout_mode = 2
 texture = ExtResource("7_858bn")
 
-[node name="TextureRect4" type="TextureRect" parent="HBoxContainer/VBoxContainer2" unique_id=402048814]
+[node name="TextureRect4" type="TextureRect" parent="ScrollContainer/Container/HBoxContainer/VBoxContainer2" unique_id=402048814]
 custom_maximum_size = Vector2(460, 215)
 layout_mode = 2
 texture = ExtResource("8_2pj6v")
 
-[node name="Label2" type="Label" parent="." unique_id=1873694535]
-layout_mode = 1
-anchors_preset = 8
+[node name="Label2" type="Label" parent="ScrollContainer/Container" unique_id=1873694535]
+layout_mode = 0
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 offset_left = -344.0
-offset_top = 56.0
+offset_top = -232.0
 offset_right = 344.0
-offset_bottom = 112.0
+offset_bottom = -176.0
 grow_horizontal = 2
 grow_vertical = 2
 text = "Lorem ipsum dolor sit amet consectetur adipiscing elit. Sit amet consectetur adipiscing elit quisque faucibus ex. Adipiscing elit quisque faucibus ex sapien vitae pellentesque."
 autowrap_mode = 2
 
-[node name="Label3" type="Label" parent="." unique_id=1392054981]
-layout_mode = 1
-anchors_preset = 8
+[node name="Label3" type="Label" parent="ScrollContainer/Container" unique_id=1392054981]
+layout_mode = 0
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 offset_left = -344.0
-offset_top = 144.0
+offset_top = -144.0
 offset_right = 344.0
-offset_bottom = 661.0
+offset_bottom = 373.0
 grow_horizontal = 2
 grow_vertical = 2
 text = "Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
@@ -182,80 +185,78 @@ Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapi
 Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos."
 autowrap_mode = 2
 
-[node name="GridContainer" type="GridContainer" parent="." unique_id=911158009]
-layout_mode = 1
-anchors_preset = 8
+[node name="GridContainer" type="GridContainer" parent="ScrollContainer/Container" unique_id=911158009]
+layout_mode = 0
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 offset_left = -336.0
-offset_top = 688.0
+offset_top = 400.0
 offset_right = -136.0
-offset_bottom = 956.0
+offset_bottom = 668.0
 grow_horizontal = 2
 grow_vertical = 2
 columns = 3
 
-[node name="TextureRect" type="TextureRect" parent="GridContainer" unique_id=138784367]
+[node name="TextureRect" type="TextureRect" parent="ScrollContainer/Container/GridContainer" unique_id=138784367]
 layout_mode = 2
 texture = ExtResource("9_w5605")
 
-[node name="TextureRect2" type="TextureRect" parent="GridContainer" unique_id=1707164238]
+[node name="TextureRect2" type="TextureRect" parent="ScrollContainer/Container/GridContainer" unique_id=1707164238]
 layout_mode = 2
 texture = ExtResource("10_87wg0")
 
-[node name="TextureRect3" type="TextureRect" parent="GridContainer" unique_id=1176417199]
+[node name="TextureRect3" type="TextureRect" parent="ScrollContainer/Container/GridContainer" unique_id=1176417199]
 layout_mode = 2
 texture = ExtResource("11_3ag6a")
 
-[node name="TextureRect4" type="TextureRect" parent="GridContainer" unique_id=1390177100]
+[node name="TextureRect4" type="TextureRect" parent="ScrollContainer/Container/GridContainer" unique_id=1390177100]
 layout_mode = 2
 texture = ExtResource("12_b3rfh")
 
-[node name="TextureRect5" type="TextureRect" parent="GridContainer" unique_id=1870531505]
+[node name="TextureRect5" type="TextureRect" parent="ScrollContainer/Container/GridContainer" unique_id=1870531505]
 layout_mode = 2
 texture = ExtResource("13_5axgr")
 
-[node name="TextureRect6" type="TextureRect" parent="GridContainer" unique_id=912928582]
+[node name="TextureRect6" type="TextureRect" parent="ScrollContainer/Container/GridContainer" unique_id=912928582]
 layout_mode = 2
 texture = ExtResource("14_wfgqd")
 
-[node name="TextureRect7" type="TextureRect" parent="GridContainer" unique_id=1024756786]
+[node name="TextureRect7" type="TextureRect" parent="ScrollContainer/Container/GridContainer" unique_id=1024756786]
 layout_mode = 2
 texture = ExtResource("15_jkes7")
 
-[node name="TextureRect8" type="TextureRect" parent="GridContainer" unique_id=962577521]
+[node name="TextureRect8" type="TextureRect" parent="ScrollContainer/Container/GridContainer" unique_id=962577521]
 layout_mode = 2
 texture = ExtResource("16_gqja0")
 
-[node name="TextureRect9" type="TextureRect" parent="GridContainer" unique_id=1827516735]
+[node name="TextureRect9" type="TextureRect" parent="ScrollContainer/Container/GridContainer" unique_id=1827516735]
 layout_mode = 2
 texture = ExtResource("17_n8v1s")
 
-[node name="TextureRect10" type="TextureRect" parent="GridContainer" unique_id=752926575]
+[node name="TextureRect10" type="TextureRect" parent="ScrollContainer/Container/GridContainer" unique_id=752926575]
 layout_mode = 2
 texture = ExtResource("18_7bdvj")
 
-[node name="TextureRect11" type="TextureRect" parent="GridContainer" unique_id=284830510]
+[node name="TextureRect11" type="TextureRect" parent="ScrollContainer/Container/GridContainer" unique_id=284830510]
 layout_mode = 2
 texture = ExtResource("19_q6xdd")
 
-[node name="TextureRect12" type="TextureRect" parent="GridContainer" unique_id=1228801888]
+[node name="TextureRect12" type="TextureRect" parent="ScrollContainer/Container/GridContainer" unique_id=1228801888]
 layout_mode = 2
 texture = ExtResource("20_lqmkq")
 
-[node name="Label4" type="Label" parent="." unique_id=147407902]
-layout_mode = 1
-anchors_preset = 8
+[node name="Label4" type="Label" parent="ScrollContainer/Container" unique_id=147407902]
+layout_mode = 0
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 offset_left = -64.0
-offset_top = 720.0
+offset_top = 432.0
 offset_right = 288.0
-offset_bottom = 928.0
+offset_bottom = 640.0
 grow_horizontal = 2
 grow_vertical = 2
 text = "LOOK AT THESE GAMER PICS
@@ -265,22 +266,16 @@ POG!!!
 
 :D"
 
-[node name="Label5" type="Label" parent="." unique_id=1211346481]
-layout_mode = 1
-anchors_preset = 8
+[node name="Label5" type="Label" parent="ScrollContainer/Container" unique_id=1211346481]
+layout_mode = 0
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 offset_left = -168.0
-offset_top = 1160.0
+offset_top = 872.0
 offset_right = 184.0
-offset_bottom = 1192.0
+offset_bottom = 904.0
 grow_horizontal = 2
 grow_vertical = 2
 text = "you are now at the bottom of the page"
-
-[node name="TextureRect" type="TextureRect" parent="." unique_id=136746199]
-layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
