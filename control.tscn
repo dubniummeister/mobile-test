@@ -56,9 +56,10 @@ offset_right = 360.0
 offset_bottom = 928.0
 grow_horizontal = 2
 grow_vertical = 2
+mouse_filter = 1
 color = Color(0.3180198, 0.31801978, 0.31801975, 1)
 
-[node name="ColorRect2" type="ColorRect" parent="ScrollContainer/Container" unique_id=771611581]
+[node name="ColorRect2" type="ColorRect" parent="ScrollContainer/Container/ColorRect" unique_id=771611581]
 layout_mode = 0
 anchor_left = 0.5
 anchor_top = 0.5
@@ -70,6 +71,7 @@ offset_right = 344.0
 offset_bottom = -800.0
 grow_horizontal = 2
 grow_vertical = 2
+mouse_filter = 1
 color = Color(0.39215687, 0.5686275, 0.32156864, 1)
 
 [node name="Label" type="Label" parent="ScrollContainer/Container" unique_id=1022747847]
