@@ -1,14 +1,9 @@
-[gd_scene format=3 uid="uid://cact66dke520j"]
+[gd_scene format=3 uid="uid://caydfnoocpums"]
 
-[ext_resource type="Script" uid="uid://cb1vgb2nlg2w1" path="res://touchscroll.gd" id="1_ou021"]
-[ext_resource type="Texture2D" uid="uid://jtdkwyvynqbf" path="res://ui/wild_land-bg.png" id="2_6a6wx"]
-[ext_resource type="Script" uid="uid://3t5ibogoc7qg" path="res://main_page.gd" id="2_sky72"]
-[ext_resource type="Texture2D" uid="uid://b5rp5stu1r4uv" path="res://ui/comanche_empire-bg.png" id="3_sky72"]
-[ext_resource type="Texture2D" uid="uid://inpfocmjvals" path="res://ui/buffalo_hide_trade-bg.png" id="4_0ytqx"]
-[ext_resource type="Texture2D" uid="uid://dmmhmmtdlusi" path="res://ui/military_on_frontier-bg.png" id="5_pxugv"]
-[ext_resource type="Texture2D" uid="uid://dbaeye37rjjtk" path="res://ui/cowboys_longhorns-bg.png" id="6_eh0v1"]
-[ext_resource type="Texture2D" uid="uid://rn5712wsu2mp" path="res://ui/frontier_settlements-bg.png" id="7_am1vj"]
-[ext_resource type="Texture2D" uid="uid://kbn84ptf13sx" path="res://icon.svg" id="8_g31lc"]
+[ext_resource type="Script" uid="uid://cb1vgb2nlg2w1" path="res://touchscroll.gd" id="1_5q070"]
+[ext_resource type="Script" uid="uid://xq8knbaqd5ym" path="res://second_page.gd" id="2_mmiqc"]
+[ext_resource type="Texture2D" uid="uid://cef8vabf4ljct" path="res://ui/asa_havey-sg.png" id="3_px6ft"]
+[ext_resource type="Texture2D" uid="uid://kbn84ptf13sx" path="res://icon.svg" id="8_c4lul"]
 
 [node name="Control" type="ScrollContainer" unique_id=262901917]
 anchors_preset = 8
@@ -22,13 +17,13 @@ offset_right = 360.0
 offset_bottom = 640.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_ou021")
+script = ExtResource("1_5q070")
 
 [node name="Container" type="Control" parent="." unique_id=362922219]
 custom_minimum_size = Vector2(720, 1856)
 layout_mode = 2
 mouse_filter = 1
-script = ExtResource("2_sky72")
+script = ExtResource("2_mmiqc")
 
 [node name="ColorRect" type="ColorRect" parent="Container" unique_id=1866674335]
 layout_mode = 0
@@ -76,59 +71,53 @@ theme_override_font_sizes/font_size = 30
 text = "Title Header"
 
 [node name="HBoxContainer" type="HBoxContainer" parent="Container" unique_id=581002012]
-custom_minimum_size = Vector2(460, 215)
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -344.0
+offset_left = -128.0
 offset_top = -784.0
-offset_right = 790.0
-offset_bottom = -79.0
+offset_right = 344.0
+offset_bottom = -424.0
 grow_horizontal = 2
 grow_vertical = 2
-scale = Vector2(0.6, 0.6)
-theme_override_constants/separation = 214
+theme_override_constants/separation = 50
 
 [node name="VBoxContainer" type="VBoxContainer" parent="Container/HBoxContainer" unique_id=2079532599]
 layout_mode = 2
+size_flags_horizontal = 3
 theme_override_constants/separation = 30
 
-[node name="TextureRect" type="TextureRect" parent="Container/HBoxContainer/VBoxContainer" unique_id=2092256156]
-custom_maximum_size = Vector2(460, 215)
+[node name="Button" type="Button" parent="Container/HBoxContainer/VBoxContainer" unique_id=1293986697]
 layout_mode = 2
-texture = ExtResource("2_6a6wx")
+text = "Button 1"
 
-[node name="TextureRect2" type="TextureRect" parent="Container/HBoxContainer/VBoxContainer" unique_id=427760993]
-custom_maximum_size = Vector2(460, 215)
+[node name="Button2" type="Button" parent="Container/HBoxContainer/VBoxContainer" unique_id=175032214]
 layout_mode = 2
-texture = ExtResource("3_sky72")
+text = "Button 2"
 
-[node name="TextureRect3" type="TextureRect" parent="Container/HBoxContainer/VBoxContainer" unique_id=203449830]
-custom_maximum_size = Vector2(460, 215)
+[node name="Button3" type="Button" parent="Container/HBoxContainer/VBoxContainer" unique_id=1973323957]
 layout_mode = 2
-texture = ExtResource("4_0ytqx")
+text = "Button 3"
 
 [node name="VBoxContainer2" type="VBoxContainer" parent="Container/HBoxContainer" unique_id=161665114]
 layout_mode = 2
+size_flags_horizontal = 3
 theme_override_constants/separation = 30
 
-[node name="TextureRect" type="TextureRect" parent="Container/HBoxContainer/VBoxContainer2" unique_id=1021102017]
-custom_maximum_size = Vector2(460, 215)
+[node name="Button" type="Button" parent="Container/HBoxContainer/VBoxContainer2" unique_id=64505599]
 layout_mode = 2
-texture = ExtResource("5_pxugv")
+text = "Button 1"
 
-[node name="TextureRect2" type="TextureRect" parent="Container/HBoxContainer/VBoxContainer2" unique_id=1802457256]
-custom_maximum_size = Vector2(460, 215)
+[node name="Button2" type="Button" parent="Container/HBoxContainer/VBoxContainer2" unique_id=229673059]
 layout_mode = 2
-texture = ExtResource("6_eh0v1")
+text = "Button 2"
 
-[node name="TextureRect3" type="TextureRect" parent="Container/HBoxContainer/VBoxContainer2" unique_id=1392913446]
-custom_maximum_size = Vector2(460, 215)
+[node name="Button3" type="Button" parent="Container/HBoxContainer/VBoxContainer2" unique_id=412261540]
 layout_mode = 2
-texture = ExtResource("7_am1vj")
+text = "Button 3"
 
 [node name="Label2" type="Label" parent="Container" unique_id=1873694535]
 layout_mode = 0
@@ -198,41 +187,50 @@ columns = 4
 
 [node name="Button" type="Button" parent="Container/GridContainer" unique_id=1639119732]
 layout_mode = 2
-icon = ExtResource("8_g31lc")
+icon = ExtResource("8_c4lul")
 
 [node name="Button2" type="Button" parent="Container/GridContainer" unique_id=466076226]
 layout_mode = 2
-icon = ExtResource("8_g31lc")
+icon = ExtResource("8_c4lul")
 
 [node name="Button3" type="Button" parent="Container/GridContainer" unique_id=591013303]
 layout_mode = 2
-icon = ExtResource("8_g31lc")
+icon = ExtResource("8_c4lul")
 
 [node name="Button4" type="Button" parent="Container/GridContainer" unique_id=1047169719]
 layout_mode = 2
-icon = ExtResource("8_g31lc")
+icon = ExtResource("8_c4lul")
 
 [node name="Button5" type="Button" parent="Container/GridContainer" unique_id=234284728]
 layout_mode = 2
-icon = ExtResource("8_g31lc")
+icon = ExtResource("8_c4lul")
 
 [node name="Button6" type="Button" parent="Container/GridContainer" unique_id=729794322]
 layout_mode = 2
-icon = ExtResource("8_g31lc")
+icon = ExtResource("8_c4lul")
 
 [node name="Button7" type="Button" parent="Container/GridContainer" unique_id=1543435358]
 layout_mode = 2
-icon = ExtResource("8_g31lc")
+icon = ExtResource("8_c4lul")
 
 [node name="Button8" type="Button" parent="Container/GridContainer" unique_id=824716882]
 layout_mode = 2
-icon = ExtResource("8_g31lc")
+icon = ExtResource("8_c4lul")
 
-[node name="ChangePageButton1" type="Button" parent="Container" unique_id=474972477]
+[node name="TextureRect" type="TextureRect" parent="Container" unique_id=1680942195]
 layout_mode = 0
-offset_left = 432.0
-offset_top = 592.0
-offset_right = 696.0
+offset_left = 16.0
+offset_top = 136.0
+offset_right = 216.01563
+offset_bottom = 408.0
+texture = ExtResource("3_px6ft")
+expand_mode = 3
+
+[node name="ChangePageButton2" type="Button" parent="Container" unique_id=1661629330]
+layout_mode = 0
+offset_left = 32.0
+offset_top = 624.0
+offset_right = 216.0
 offset_bottom = 672.0
 
-[connection signal="pressed" from="Container/ChangePageButton1" to="Container" method="_on_change_page_button_1_pressed"]
+[connection signal="pressed" from="Container/ChangePageButton2" to="Container" method="_on_change_page_button_2_pressed"]
